@@ -12,3 +12,11 @@ jobs:
        with:
          name: file
          path: file.txt
+  download:
+    name: artifact download
+    runs-on: ubuntu-latest
+    steps:
+     - name: download file
+       uses: actions/download-artifact@v3
+       with:
+         name: file
